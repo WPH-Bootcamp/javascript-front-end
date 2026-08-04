@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Teachers", sans-serif;
+}
+
+.web-development {
+  color: #ff5733;
+  font-weight: bold;
+}
+.mobile-apps {
+  color: #33c1ff;
+  font-weight: bold;
+}
+.ui-ux-design {
+  color: #33ff57;
+  font-weight: bold;
+}
