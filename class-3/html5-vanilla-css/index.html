@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSpace — Modern Web Development</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ============================= -->
+    <!-- SECTION 1 — NAVBAR (Flexbox) -->
+    <!-- ============================= -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <div class="logo">Dev<span>Space</span></div>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+        </nav>
+
+        <button class="btn btn-primary nav-cta">Get Started</button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- SECTION 2 — HERO (Flexbox + Position) -->
+    <!-- ============================= -->
+    <section class="hero" id="home">
+      <span class="dot dot-top"></span>
+      <span class="dot dot-bottom"></span>
+
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Belajar Frontend Development dengan Cara yang Modern</h1>
+          <p>
+            Pelajari HTML5 dan CSS dari dasar melalui satu design yang sama,
+            dibuat dengan dua cara: Vanilla CSS dan Tailwind CSS.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Mulai Belajar</button>
+            <button class="btn btn-outline">Lihat Materi</button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-line"></div>
+            <div class="hero-card-line short"></div>
+            <div class="hero-card-line"></div>
+            <div class="hero-card-badge">HTML5 + CSS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 3 — FEATURES (Grid) -->
+    <!-- ============================= -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Kenapa Belajar di Sini?</h2>
+        <p class="section-subtitle">
+          Materi yang simple dan mudah dipahami untuk pemula.
+        </p>
+
+        <div class="features-grid">
+          <div class="card">
+            <div class="card-icon">01</div>
+            <h3>Struktur Semantik</h3>
+            <p>
+              Belajar menulis HTML5 dengan tag semantik yang rapi dan mudah
+              dibaca.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">02</div>
+            <h3>Flexbox & Grid</h3>
+            <p>
+              Kuasai layout modern menggunakan Flexbox dan CSS Grid secara
+              praktis.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">03</div>
+            <h3>Responsive Design</h3>
+            <p>
+              Buat tampilan yang rapi di semua ukuran layar, dari mobile hingga
+              desktop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 4 — ABOUT (Flexbox + Responsive) -->
+    <!-- ============================= -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-image">
+          <div class="image-placeholder">Code Preview</div>
+        </div>
+
+        <div class="about-content">
+          <h2 class="section-title">Satu Design, Dua Cara Membangun</h2>
+          <p>
+            Project ini membandingkan cara membangun tampilan yang sama
+            menggunakan Vanilla CSS dan Tailwind CSS v4, agar kamu bisa melihat
+            langsung perbedaan pendekatannya.
+          </p>
+          <ul class="checklist">
+            <li>✔ HTML5 semantic structure</li>
+            <li>✔ Flexbox &amp; CSS Grid</li>
+            <li>✔ Position relative &amp; absolute</li>
+            <li>✔ Responsive di semua device</li>
+          </ul>
+          <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 5 — STATISTICS (Grid) -->
+    <!-- ============================= -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">10K+</span>
+          <span class="stat-label">Users</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">250+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">99%</span>
+          <span class="stat-label">Uptime</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 6 — SERVICES (Flexbox + Position) -->
+    <!-- ============================= -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Layanan Kami</h2>
+        <p class="section-subtitle">
+          Fokus pada dasar-dasar frontend development.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-dot"></span>
+            <h3>Web Development</h3>
+            <p>
+              Belajar membangun halaman web dari struktur HTML hingga styling
+              CSS.
+            </p>
+            <a href="#" class="service-link">Learn More →</a>
+          </div>
+          <div class="service-card">
+            <span class="service-dot"></span>
+            <h3>Responsive Layout</h3>
+            <p>Membuat layout yang menyesuaikan di berbagai ukuran layar.</p>
+            <a href="#" class="service-link">Learn More →</a>
+          </div>
+          <div class="service-card">
+            <span class="service-dot"></span>
+            <h3>Modern CSS</h3>
+            <p>
+              Menguasai Flexbox, Grid, dan utility-first CSS dengan Tailwind.
+            </p>
+            <a href="#" class="service-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 7 — TESTIMONIALS (Grid + Flexbox) -->
+    <!-- ============================= -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Apa Kata Mereka</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Penjelasannya simple dan gampang diikuti untuk pemula seperti
+              saya."
+            </p>
+            <div class="testimonial-user">
+              <div class="avatar">JD</div>
+              <div>
+                <div class="user-name">John Doe</div>
+                <div class="user-role">Frontend Developer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Perbandingan Vanilla CSS dan Tailwind-nya sangat membantu
+              belajar."
+            </p>
+            <div class="testimonial-user">
+              <div class="avatar">AS</div>
+              <div>
+                <div class="user-name">Anna Smith</div>
+                <div class="user-role">UI Designer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Struktur codenya rapi, cocok buat belajar dari nol."</p>
+            <div class="testimonial-user">
+              <div class="avatar">RK</div>
+              <div>
+                <div class="user-name">Rian K.</div>
+                <div class="user-role">Student</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 8 — CTA + FOOTER (Flexbox + Responsive) -->
+    <!-- ============================= -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2>Ready to build something?</h2>
+          <p>Start your journey today.</p>
+        </div>
+        <button class="btn btn-light">Get Started</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="logo">Dev<span>Space</span></div>
+
+        <nav class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="#">Twitter</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // SECTION 1 — simple mobile menu toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

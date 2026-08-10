@@ -1,0 +1,15 @@
+{
+  "name": "tailwindcss-fundamental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

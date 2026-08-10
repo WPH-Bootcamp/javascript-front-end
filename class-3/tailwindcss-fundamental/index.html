@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSpace — Modern Web Development</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="font-sans text-slate-700 leading-relaxed bg-white">
+    <!-- ============================= -->
+    <!-- SECTION 1 — NAVBAR (Flexbox) -->
+    <!-- ============================= -->
+    <header class="border-b border-slate-200 py-4 sticky top-0 bg-white z-10">
+      <div
+        class="max-w-[1200px] mx-auto px-6 flex items-center justify-between gap-4"
+      >
+        <div class="text-xl font-bold text-slate-900">
+          Dev<span class="text-blue-600">Space</span>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8" id="navLinks">
+          <a
+            href="#home"
+            class="text-slate-700 text-[0.95rem] hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-slate-700 text-[0.95rem] hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="text-slate-700 text-[0.95rem] hover:text-blue-600"
+            >Services</a
+          >
+        </nav>
+
+        <button
+          class="hidden md:inline-block bg-blue-600 text-white font-semibold text-[0.95rem] px-6 py-3 rounded-lg"
+        >
+          Get Started
+        </button>
+
+        <button
+          class="md:hidden text-2xl text-slate-900"
+          id="menuToggle"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- SECTION 2 — HERO (Flexbox + Position) -->
+    <!-- ============================= -->
+    <section
+      class="relative py-20 bg-gradient-to-b from-blue-50 to-white overflow-hidden"
+      id="home"
+    >
+      <span
+        class="absolute top-10 right-10 w-4 h-4 bg-blue-600 rounded-full opacity-40"
+      ></span>
+      <span
+        class="absolute bottom-10 left-10 w-4 h-4 bg-blue-600 rounded-full opacity-40"
+      ></span>
+
+      <div
+        class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left"
+      >
+        <div class="md:max-w-[480px]">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 leading-tight"
+          >
+            Belajar Frontend Development dengan Cara yang Modern
+          </h1>
+          <p class="text-slate-500 mb-6">
+            Pelajari HTML5 dan CSS dari dasar melalui satu design yang sama,
+            dibuat dengan dua cara: Vanilla CSS dan Tailwind CSS.
+          </p>
+          <div class="flex justify-center md:justify-start gap-4 flex-wrap">
+            <button
+              class="bg-blue-600 text-white font-semibold text-[0.95rem] px-6 py-3 rounded-lg"
+            >
+              Mulai Belajar
+            </button>
+            <button
+              class="bg-transparent text-blue-600 border border-blue-600 font-semibold text-[0.95rem] px-6 py-3 rounded-lg"
+            >
+              Lihat Materi
+            </button>
+          </div>
+        </div>
+
+        <div class="w-full flex justify-center">
+          <div
+            class="relative bg-white border border-slate-200 rounded-2xl shadow-[0_10px_30px_rgba(15,23,42,0.08)] p-8 w-full max-w-[320px]"
+          >
+            <div class="h-3 bg-slate-200 rounded-md mb-3"></div>
+            <div class="h-3 bg-slate-200 rounded-md mb-3 w-3/5"></div>
+            <div class="h-3 bg-slate-200 rounded-md mb-3"></div>
+            <div
+              class="inline-block mt-5 bg-blue-600 text-white text-[0.8rem] font-semibold px-3 py-1.5 rounded-full"
+            >
+              HTML5 + CSS
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 3 — FEATURES (Grid) -->
+    <!-- ============================= -->
+    <section class="py-20" id="features">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="text-[2rem] text-center text-slate-900 mb-2">
+          Kenapa Belajar di Sini?
+        </h2>
+        <p class="text-center text-slate-500 mb-12">
+          Materi yang simple dan mudah dipahami untuk pemula.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <div class="text-blue-600 font-bold text-2xl mb-3">01</div>
+            <h3 class="text-lg text-slate-900 mb-2">Struktur Semantik</h3>
+            <p class="text-slate-500 text-[0.95rem]">
+              Belajar menulis HTML5 dengan tag semantik yang rapi dan mudah
+              dibaca.
+            </p>
+          </div>
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <div class="text-blue-600 font-bold text-2xl mb-3">02</div>
+            <h3 class="text-lg text-slate-900 mb-2">Flexbox &amp; Grid</h3>
+            <p class="text-slate-500 text-[0.95rem]">
+              Kuasai layout modern menggunakan Flexbox dan CSS Grid secara
+              praktis.
+            </p>
+          </div>
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <div class="text-blue-600 font-bold text-2xl mb-3">03</div>
+            <h3 class="text-lg text-slate-900 mb-2">Responsive Design</h3>
+            <p class="text-slate-500 text-[0.95rem]">
+              Buat tampilan yang rapi di semua ukuran layar, dari mobile hingga
+              desktop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 4 — ABOUT (Flexbox + Responsive) -->
+    <!-- ============================= -->
+    <section class="py-20 bg-slate-50" id="about">
+      <div
+        class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1">
+          <div
+            class="bg-blue-100 rounded-2xl h-[280px] flex items-center justify-center text-blue-600 font-semibold"
+          >
+            Code Preview
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <h2 class="text-[2rem] text-slate-900 mb-4 text-left">
+            Satu Design, Dua Cara Membangun
+          </h2>
+          <p class="text-slate-500 mb-5">
+            Project ini membandingkan cara membangun tampilan yang sama
+            menggunakan Vanilla CSS dan Tailwind CSS v4, agar kamu bisa melihat
+            langsung perbedaan pendekatannya.
+          </p>
+          <ul class="list-none mb-6">
+            <li class="mb-2.5 text-slate-700">✔ HTML5 semantic structure</li>
+            <li class="mb-2.5 text-slate-700">✔ Flexbox &amp; CSS Grid</li>
+            <li class="mb-2.5 text-slate-700">
+              ✔ Position relative &amp; absolute
+            </li>
+            <li class="mb-2.5 text-slate-700">✔ Responsive di semua device</li>
+          </ul>
+          <button
+            class="bg-blue-600 text-white font-semibold text-[0.95rem] px-6 py-3 rounded-lg"
+          >
+            Pelajari Lebih Lanjut
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 5 — STATISTICS (Grid) -->
+    <!-- ============================= -->
+    <section class="py-16 bg-slate-900">
+      <div
+        class="max-w-[1200px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+      >
+        <div>
+          <span class="block text-3xl font-bold text-white">10K+</span>
+          <span class="block text-slate-400 text-sm mt-1">Users</span>
+        </div>
+        <div>
+          <span class="block text-3xl font-bold text-white">250+</span>
+          <span class="block text-slate-400 text-sm mt-1">Projects</span>
+        </div>
+        <div>
+          <span class="block text-3xl font-bold text-white">99%</span>
+          <span class="block text-slate-400 text-sm mt-1">Uptime</span>
+        </div>
+        <div>
+          <span class="block text-3xl font-bold text-white">24/7</span>
+          <span class="block text-slate-400 text-sm mt-1">Support</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 6 — SERVICES (Flexbox + Position) -->
+    <!-- ============================= -->
+    <section class="py-20" id="services">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="text-[2rem] text-center text-slate-900 mb-2">
+          Layanan Kami
+        </h2>
+        <p class="text-center text-slate-500 mb-12">
+          Fokus pada dasar-dasar frontend development.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="relative flex flex-col gap-2 bg-white border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <span
+              class="absolute top-6 right-6 w-2.5 h-2.5 rounded-full bg-blue-600"
+            ></span>
+            <h3 class="text-lg text-slate-900">Web Development</h3>
+            <p class="text-slate-500 text-[0.95rem]">
+              Belajar membangun halaman web dari struktur HTML hingga styling
+              CSS.
+            </p>
+            <a
+              href="#"
+              class="mt-2 text-blue-600 font-semibold text-sm no-underline"
+              >Learn More →</a
+            >
+          </div>
+          <div
+            class="relative flex flex-col gap-2 bg-white border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <span
+              class="absolute top-6 right-6 w-2.5 h-2.5 rounded-full bg-blue-600"
+            ></span>
+            <h3 class="text-lg text-slate-900">Responsive Layout</h3>
+            <p class="text-slate-500 text-[0.95rem]">
+              Membuat layout yang menyesuaikan di berbagai ukuran layar.
+            </p>
+            <a
+              href="#"
+              class="mt-2 text-blue-600 font-semibold text-sm no-underline"
+              >Learn More →</a
+            >
+          </div>
+          <div
+            class="relative flex flex-col gap-2 bg-white border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <span
+              class="absolute top-6 right-6 w-2.5 h-2.5 rounded-full bg-blue-600"
+            ></span>
+            <h3 class="text-lg text-slate-900">Modern CSS</h3>
+            <p class="text-slate-500 text-[0.95rem]">
+              Menguasai Flexbox, Grid, dan utility-first CSS dengan Tailwind.
+            </p>
+            <a
+              href="#"
+              class="mt-2 text-blue-600 font-semibold text-sm no-underline"
+              >Learn More →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 7 — TESTIMONIALS (Grid + Flexbox) -->
+    <!-- ============================= -->
+    <section class="py-20 bg-slate-50">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="text-[2rem] text-center text-slate-900 mb-12">
+          Apa Kata Mereka
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-white border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <div class="text-amber-500 mb-3">★★★★★</div>
+            <p class="text-slate-700 mb-5">
+              "Penjelasannya simple dan gampang diikuti untuk pemula seperti
+              saya."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-sm"
+              >
+                JD
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900 text-sm">John Doe</div>
+                <div class="text-slate-500 text-xs">Frontend Developer</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <div class="text-amber-500 mb-3">★★★★★</div>
+            <p class="text-slate-700 mb-5">
+              "Perbandingan Vanilla CSS dan Tailwind-nya sangat membantu
+              belajar."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-sm"
+              >
+                AS
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900 text-sm">
+                  Anna Smith
+                </div>
+                <div class="text-slate-500 text-xs">UI Designer</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-slate-200 rounded-xl p-8 shadow-[0_4px_12px_rgba(15,23,42,0.04)]"
+          >
+            <div class="text-amber-500 mb-3">★★★★★</div>
+            <p class="text-slate-700 mb-5">
+              "Struktur codenya rapi, cocok buat belajar dari nol."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-sm"
+              >
+                RK
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900 text-sm">Rian K.</div>
+                <div class="text-slate-500 text-xs">Student</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 8 — CTA + FOOTER (Flexbox + Responsive) -->
+    <!-- ============================= -->
+    <section class="bg-blue-600 py-14">
+      <div
+        class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between items-start gap-5"
+      >
+        <div>
+          <h2 class="text-white text-3xl mb-2">Ready to build something?</h2>
+          <p class="text-blue-100">Start your journey today.</p>
+        </div>
+        <button
+          class="bg-white text-blue-600 font-semibold text-[0.95rem] px-6 py-3 rounded-lg"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900 py-8">
+      <div
+        class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center md:justify-between gap-4 text-center"
+      >
+        <div class="text-xl font-bold text-white">
+          Dev<span class="text-blue-600">Space</span>
+        </div>
+
+        <nav class="flex gap-5">
+          <a
+            href="#home"
+            class="text-slate-400 text-sm no-underline hover:text-white"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-slate-400 text-sm no-underline hover:text-white"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="text-slate-400 text-sm no-underline hover:text-white"
+            >Services</a
+          >
+        </nav>
+
+        <div class="flex gap-5">
+          <a
+            href="#"
+            class="text-slate-400 text-sm no-underline hover:text-white"
+            >Twitter</a
+          >
+          <a
+            href="#"
+            class="text-slate-400 text-sm no-underline hover:text-white"
+            >GitHub</a
+          >
+          <a
+            href="#"
+            class="text-slate-400 text-sm no-underline hover:text-white"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // SECTION 1 — simple mobile menu toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("flex");
+        navLinks.classList.toggle("flex-col");
+        navLinks.classList.toggle("absolute");
+        navLinks.classList.toggle("top-16");
+        navLinks.classList.toggle("right-6");
+        navLinks.classList.toggle("bg-white");
+        navLinks.classList.toggle("border");
+        navLinks.classList.toggle("border-slate-200");
+        navLinks.classList.toggle("rounded-lg");
+        navLinks.classList.toggle("p-4");
+        navLinks.classList.toggle("gap-3");
+      });
+    </script>
+  </body>
+</html>
